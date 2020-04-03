@@ -1,0 +1,108 @@
+/*清除边距*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 导航 */
+.menu{
+    z-index: 2;
+    position: absolute;
+    top: 500px;
+}
+
+
+/*图片部分开始*/
+
+.container {
+    position: relative;
+    width: 480px;
+    height: 270px;
+    margin: 100pxauto0auto;
+    overflow: hidden;
+}
+
+.wrap {
+    position: absolute;
+    width: 1920px;
+    height: 270px;
+}
+
+.wrap li {
+    width: 480px;
+    height: 270px;
+    list-style-type: none;
+    float: left;
+}
+
+
+/*图片部分结束*/
+
+
+/*箭头部分开始*/
+
+.wrap li img {
+    width: 480px;
+    height: 270px;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    text-decoration: none;
+    padding: 0px14px;
+    font-size: 50px;
+    border-radius: 50%;
+    color: black;
+    display: none;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container:hover.arrow {
+    display: block;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+
+/*箭头部分结束*/
+
+
+/*小圆点部分开始*/
+
+.dots {
+    position: absolute;
+    right: 5px;
+    bottom: 40px;
+    width: 180px;
+    height: 10px;
+}
+
+.dots span {
+    margin-left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.dots span.on {
+    background-color: blue;
+}
+
+
+/*小圆点部分结束*/
