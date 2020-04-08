@@ -1,0 +1,16 @@
+body{
+	background-color: lightseagreen;
+}
+form{
+	text-align: center;
+	margin-top: 20%;
+}
+div{
+	margin: 30px auto;
+}
+input{
+	background-color: lightseagreen;
+}
+.submit{
+	cursor: pointer;
+}

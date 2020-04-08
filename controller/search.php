@@ -20,20 +20,6 @@ $retval = mysqli_query($conn, $sql);
 if (!$retval) {
 	die('无法读取数据: ' . mysqli_error($conn));
 }
-//echo '数据库连接成功<br/>';	
-// $row = mysqli_fetch_assoc($retval)
-// echo '<table border="1"><tr><td>商品名称</td><td>商品价格</td><td>商品描述</td><td>商品图片</td></tr>';
-//echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../public/css\" />";
-// while($row = mysqli_fetch_assoc($retval))
-// {
-// echo "{$row['goods_name']}<br/>".
-// "{$row['goods_price']}<br/>".
-// "{$row['goods_description']}<br/>".
-// "<a href='../index.html'><img class='goods_icon' src='{$row['goods_icon']}'/><a/>".
-// "<br/>";
-// }
-// echo '</table>';
-// mysqli_close($conn);
 ?>
 <?php echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../public/goodsList.css\" />"; ?>
 <?php foreach ($retval as $key => $lay) { ?>

@@ -8,8 +8,9 @@
 /* 导航 */
 .menu{
     z-index: 2;
-    position: absolute;
-    top: 500px;
+    position: fixed;
+    bottom: 10px;
+    left: 500px;
 }
 
 
@@ -48,6 +49,7 @@
 }
 
 .arrow {
+    z-index: 2;
     position: absolute;
     top: 40%;
     text-decoration: none;

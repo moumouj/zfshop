@@ -40,7 +40,7 @@ $query="INSERT INTO goods(goods_name,goods_price,goods_stock,goods_description,g
 $result=mysqli_query($conn,$query);
 if($result)
 {
-	echo '录入成功<a href="../index.html">点击此处进入主页</a>';
+	echo '录入成功<a href="../home.html">点击此处进入主页</a>';
 }
 else
 {	
